@@ -132,10 +132,8 @@ function ControlsSidebar() {
               />
             </>
           )}
-
-          {/* <ControlsSidebarExport
-                disabled={runs.isLoading || runs.isEmpty}
-              /> */}
+          <UI.Line />
+          <ControlsSidebarExport disabled={runs.isLoading || runs.isEmpty} />
         </div>
       )}
     </div>

@@ -657,7 +657,7 @@ function PanelChart(props) {
       .append('svg')
       .attr('width', width)
       .attr('height', height)
-      .attr('xmlns', 'http://www.w3.org/2000/svg'); // .attr('id', 'panel_svg');
+      .attr('xmlns', 'http://www.w3.org/2000/svg');
 
     const titleMarginTop = 5;
     const titleMarginBottom = 2;
