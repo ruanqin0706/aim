@@ -9,6 +9,9 @@ if TYPE_CHECKING:
 
 class ContainerView:
 
+    def preload(self):
+        ...
+
     @property
     def repo(
         self
