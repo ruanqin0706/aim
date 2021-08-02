@@ -199,7 +199,7 @@ def decode_tree(
 
 
 def iter_decode_tree(
-    paths_vals: Iterator[Tuple[Tuple[Union[int, str], ...], Any]],
+    paths_vals: Iterator[Tuple[bytes, bytes]],
     level: int = 1
 ):
     return iter_fold_tree(

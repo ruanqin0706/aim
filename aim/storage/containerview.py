@@ -137,3 +137,21 @@ class ContainerView:
         key: bytes = b''
     ) -> Tuple[bytes, bytes]:
         ...
+
+    @abstractmethod
+    def batch_delete(
+        self,
+        prefix: bytes,
+        store_batch = None
+    ):
+        ...
+
+    @abstractmethod
+    def batch_set(
+        self,
+        key: bytes,
+        value: bytes,
+        *,
+        store_batch = None
+    ):
+        ...
